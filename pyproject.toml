@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "art31weed-safeval_jd445"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出模型安全评测负责人·MoE 路由的负载不均上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "art31weed" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://art31weed.github.io"
+Repository = "https://github.com/art31weed/safeval_jd445"
+Issues = "https://github.com/art31weed/safeval_jd445/issues"
+
+[project.scripts]
+safeval_jd445 = "safeval_jd445:main"
+
+[tool.setuptools]
+py-modules = ["safeval_jd445"]
